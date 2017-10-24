@@ -1,128 +1,358 @@
 @import 'normalize';
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Merriweather|Lato');
 
 /* INICIO - PAGE STYLING*/
 $textColor: rgb(21,21,21);
 $linkColor: cyan;
-$mainColor: orange;
-$secondColor: purple;
+$mainColor: #fda085;
+$secondColor: #f6d365;
+$avatarSize: 190px;
+$fontTitle: 'Abril Fatface', cursive;
+$fontDetails: 'Merriweather', serif;
+$fontContent: 'Lato', sans-serif;
+$textColor: #292929;
 
-/*Menu de navegação*/
-nav{
-	max-width: 95%;
-	mask-image: linear-gradient(90deg, rgba(255,255,255,0)0%, #fff 25%, #fff 75%, rgba(255,255,255,0)100%);
-	margin: 0 auto;
+/*INICIO - Tipografia*/
+	header,body{
+		font-family: $fontContent;
+		color: $textColor;
+	}
 
-	ul{
-		text-align: center;
-		background: linear-gradient(90deg, rgba(255,255,255,0)0%, rgba(255,255,255,.2)25%,rgba(255,255,255,.2)75%,rgba(255,255,255,0)100%);
-		/*box-shadow: 0 0 25px rgba(0,0,0,.1), inset 0 0 1px rgba(255,255,255,.6);*/
-		margin: 0;
+	.sobre{
+		h1 {
+		    font-size: 55px;
+		    margin: 0;
+		    font-weight: normal;
+		    font-family: $fontTitle;
+		}
 
-		li{
-			display: inline-block;
+		h2 {
+		    font-weight: lighter;
+		    font-size: 25px;
+		    margin: -15px 0 0 0;
+		    font-family: $fontDetails;
+		}
 
-			a{
-				padding: 10px;
-				text-transform: uppercase;
-				color: rgba(0,35,122,.5);
-				font-size: 15px;
-				text-decoration: none;
-				display: block;
+		.sobre-desc p{
+			text-align: justify;
+		}
+	}
 
-				&:hover{
-					/*box-shadow: 0 0 10px rgba(0,0,0,.1), inset 0 0 1px rgba(255,255,255,.6);*/
-					background: rgba(255,255,255,.1);
-					color: rgba(0,35,122,.7);
+	.side-one{
+		h1{
+			font-family: $fontTitle;
+		    font-weight: normal;
+		    font-size: 40px;
+		    margin: 0;
+		}
+
+		h2{
+			font-family: $fontDetails;
+			font-weight: normal;
+		    font-size: 12px;
+		    margin: 0;
+		}
+	}
+/*FIM - Tipografia*/
+
+/*INICIO - Menu de navegação*/
+	header{
+		position: absolute;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	nav{
+		max-width: 95%;
+		mask-image: linear-gradient(90deg, rgba(255,255,255,0)0%, #fff 25%, #fff 75%, rgba(255,255,255,0)100%);
+		/*mask-image: linear-gradient(left, rgba(255, 255, 255, 0.6) 0%, #fff 25%, #fff 75%, rgba(255, 255, 255, 0.6) 100%);*/
+		margin: 0 auto;
+
+		ul{
+			text-align: center;
+			background: linear-gradient(90deg, rgba(255,255,255,0)0%, rgba(255,255,255,.2)25%,rgba(255,255,255,.2)75%,rgba(255,255,255,0)100%);
+			/*
+			background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.7) 25%, rgba(255, 255, 255, 0.7) 75%, rgba(255, 255, 255, 0.1) 100%);
+			box-shadow: 0 0 25px rgba(0,0,0,.1), inset 0 0 1px rgba(255,255,255,.6);*/
+			margin: 0;
+
+			li{
+				display: inline-block;
+
+				a{
+					padding: 10px;
+					text-transform: uppercase;
+					color: $mainColor;
+					font-size: 14px;
+					text-decoration: none;
+					display: block;
+
+					&:hover{
+						/*box-shadow: 0 0 10px rgba(0,0,0,.1), inset 0 0 1px rgba(255,255,255,.6);*/
+						background: rgba(255,255,255,.1);
+						color: $secondColor;
+					}
 				}
 			}
 		}
 	}
-}
+/*FIM - Menu de navegação*/
 
-/*Imagem do perfil*/
-.avatar{
-	position: relative;
-	display: inline-block;
-	margin: 20px;
-	max-width: 190px;
-	width: 100%;
-	color: #bbb;
-	font-size: 16px;
-	box-shadow: none !important;
-	transform: translateZ(0);
+/*INICIO - Imagem do perfil*/
+	.avatar{
+		position: relative;
+		display: inline-block;
+		margin: 20px;
+		max-width: $avatarSize;
+		width: 100%;
+		color: $mainColor;
+		font-size: 16px;
+		box-shadow: none !important;
+		transform: translateZ(0);
+		padding: 10px;
 
-	*,
-	&:before,
-	&:after{
-		-webkit-box-sizing: border-box;
-  		box-sizing: border-box;
-  		-webkit-transition: all 0.3s linear;
-  		transition: all 0.3s linear;
+		&:hover{
+			&:before,
+			&:after{
+				border: 2px solid $secondColor;
+				border-color: transparent $secondColor;
+			}
+		}
+
+		*,
+		&:before,
+		&:after{
+			-webkit-box-sizing: border-box;
+	  		box-sizing: border-box;
+	  		-webkit-transition: all 0.3s linear;
+	  		transition: all 0.3s linear;
+		}
+
+		&:before,
+		&:after{
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			border-radius: 50%;
+			content: '';
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			z-index: -1;
+			border: 2px solid $mainColor;
+			border-color: transparent $mainColor;
+		}
+
+		div{
+			background-position: center !important;
+		  	background-size: cover !important;
+		  	height: $avatarSize;
+		  	width: $avatarSize;
+		  	border-radius: 50%;
+		}
+
+		figcaption {
+		  	position: absolute;
+		  	top: 5px;
+		  	bottom: 5px;
+		  	left: 5px;
+		  	right: 5px;
+		  	opacity: 0;
+		  	background-color: rgba(0, 0, 0, 0.9);
+		  	border-radius: 50%;
+		}
+
+		i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			font-size: 4em;
+			z-index: 1;
+		}
+
+		a {
+		  	position: absolute;
+		  	top: 0;
+		  	bottom: 0;
+		  	left: 0;
+		  	right: 0;
+		  	z-index: 1;
+		}
 	}
+/*FIM - Imagem do perfil*/
 
-	&:before,
-	&:after{
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		border-radius: 50%;
-		content: '';
-		position: absolute;
-		top: 0px;
-		bottom: 0px;
-		left: 0px;
-		right: 0px;
+/*INICIO - Sobre*/
+	.sobre{
+		text-align: center;
+		padding-bottom: 20px;
+		padding-top: 50px;
+		background: url('http://sites.google.com/site/arianimartinshost/imagens/IMG_20171014_140125_465.jpg');
+		background-size: cover;
+		background-position: center;
+		position: fixed;
 		z-index: -1;
-		border: 2px solid #bbb;
-		border-color: transparent #bbb;
+	}
+	.sobre-desc {
+	    width: 60%;
+	    margin: auto;
 	}
 
-	img{
-		max-width: 100%;
-	  	backface-visibility: hidden;
-	  	vertical-align: top;
-	  	border-radius: 50%;
-	  	padding: 10px;
+	.sobre-btns {
+	  	display: flex;
+	  	justify-content: center;
+	  	align-items: center;
+	  	align-content: center;
+	 	flex-wrap: wrap;
+	  	width: 60%;
+	  	margin: 0 auto;
 	}
 
-	figcaption {
-	  	position: absolute;
-	  	top: 5px;
-	  	bottom: 5px;
-	  	left: 5px;
-	  	right: 5px;
-	  	opacity: 0;
-	  	background-color: rgba(0, 0, 0, 0.9);
-	  	border-radius: 50%;
+	.btn {
+	  	margin: 10px;
+	  	padding: 20px;
+	  	text-align: center;
+	  	text-transform: uppercase;
+	  	transition: 0.5s;
+	  	background-size: 200% auto;
+	  	color: white;
+	  	/*box-shadow: 0 0 20px #eee;*/
+	  	border-radius: 10px;
+	  	width: 200px;
+	  	font-family: $fontContent;
+	  	font-size: 14px;
+
+	  	&:hover{
+	  		background-position: right center;
+	  		cursor: pointer;
+	  	}
+	}
+	.btn-main {
+	  	background-image: linear-gradient(to right, $secondColor 0%, $mainColor 51%, $secondColor 100%);
+	}
+/*FIM - Sobre*/
+
+/*INICIO - Divisão principal*/
+	.main-content {
+	    position: absolute;
+	    background: white;
+	    margin-top: 693px; /*Tamanho da área sobre*/
+	}
+	.conhecimento, .experiencia, .formacao {
+	    width: 90%;
+	    margin: 10px auto 20px auto;
+	    display: flex;
+	  	justify-content: center;
+	  	align-items: start;
+	  	align-content: center;
+	 	flex-wrap: wrap;
 	}
 
-	i {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		font-size: 4em;
-		z-index: 1;
+	.competencia, .portfolio{
+		background: $secondColor;
 	}
 
-	a {
-	  	position: absolute;
-	  	top: 0;
-	  	bottom: 0;
-	  	left: 0;
-	  	right: 0;
-	  	z-index: 1;
+	.side-one{
+		width: 25%;
+		box-sizing: border-box;
+		flex-wrap: wrap;
+		word-wrap: break-word;
 	}
-}
 
+	.side-two{
+		width: 75%;
+		box-sizing: border-box;
+		flex-wrap: wrap;
+	}
+/*FIM - Divisão principal*/
 
-/*Área - SOBRE*/
-.sobre{
-	text-align: center;
-}
-.sobre-desc {
-    width: 60%;
-    margin: auto;
-}
+/*INICIO - Barras de progresso das Skills*/
+	.known-container {
+	    width: 170px;
+	    display: inline-block;
+	    margin-right: 20px;
+	    margin-top: 15px;
+	}
+
+	.progress-skill {
+		height: 10px;
+		width: 100%;
+		background: rgb(241, 241, 241);
+
+		div{
+			background: -webkit-linear-gradient(360deg, $secondColor, $mainColor);
+			background: -moz-linear-gradient(360deg, $secondColor, $mainColor);
+			background: -o-linear-gradient(360deg, $secondColor, $mainColor);
+			background: linear-gradient(90deg, $secondColor, $mainColor);
+			height: inherit;
+		}
+	}
+
+	$skillList: (ingles:90%, espanhol:10%, android:73%, windows:50%, php:32%, javascript:15%, wordpress:37%,
+		csharp:50%, java:50%, photoshop:60%, illustrator:20%, html:85%,	css:75%, sass:20%);
+
+	@mixin animaSkill($name, $limit){
+		animation: $name 3s ease-in-out;
+		@keyframes #{$name}{
+			from { width: 0; }
+			to { width: $limit; }
+		}
+	}
+
+	@each $item, $size in $skillList{	
+		.#{$item}-skill{
+			width: $size;
+			@include animaSkill(skill#{$item}, $size);
+		}
+	}
+/*FIM - Barras de progresso das Skills*/
+
+/*INICIO - Timeline Experiência e Cursos*/
+	.cv-timeline{
+		overflow: hidden;
+		margin-top: 10px;
+	}
+
+	.timeline-ladoe{
+		float: left;
+		width: 15%;
+		text-align: right;
+	    padding-right: 10px;
+	    box-sizing: border-box;
+	}
+	.timeline-ladod{
+		float: right;
+		width: 85%;
+		border-left: 1px solid $secondColor;
+	    box-sizing: border-box;
+	    padding-left: 5px;
+	}
+
+	.cv-title-sub { font-weight: bold; }
+	.cv-sub-date { font-size: smaller; }
+	.cv-sub-cargo{ font-weight: bold; }
+	.grupo1, .grupo2{ overflow: hidden; }
+	.cv-title-sub { font-weight: bold; }
+	.cv-sub-desc { padding-bottom: 20px; }
+	.cv-timeline .cv-sub-cargo:before {
+		content: '\f111';
+		font-family: FontAwesome;
+		margin-left: -12px;
+		margin-right: 5px;
+		color: $secondColor;
+	}
+	.cv-portfolio .cv-sub-desc:before{
+		content: '\f111';
+	    font-family: FontAwesome;
+	    margin-left: -12px;
+	    color: $secondColor;
+	}
+	.cv-prof .cv-sub-desc {
+	    padding-bottom: 20px;
+	    text-align: justify;
+	    padding: 5px;
+	}
+/*FIM - Timeline Experiência e Cursos*/
 
 /* FIM - PAGE STYLING*/
