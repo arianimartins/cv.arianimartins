@@ -4,13 +4,14 @@
 /* INICIO - PAGE STYLING*/
 $textColor: rgb(21,21,21);
 $linkColor: cyan;
-$mainColor: #fda085;
-$secondColor: #f6d365;
+$secondColor: #84fab0;
+$mainColor: #8fd3f4;
 $avatarSize: 190px;
 $fontTitle: 'Abril Fatface', cursive;
 $fontDetails: 'Merriweather', serif;
 $fontContent: 'Lato', sans-serif;
-$textColor: #292929;
+$textColor: #6b6b6b;
+$linkColor: #2897ce;
 
 /*INICIO - Tipografia*/
 	header,body{
@@ -19,6 +20,7 @@ $textColor: #292929;
 	}
 
 	.sobre{
+		color: $textColor;
 		h1 {
 		    font-size: 55px;
 		    margin: 0;
@@ -31,6 +33,7 @@ $textColor: #292929;
 		    font-size: 25px;
 		    margin: -15px 0 0 0;
 		    font-family: $fontDetails;
+		    color: $mainColor;
 		}
 
 		.sobre-desc p{
@@ -44,6 +47,7 @@ $textColor: #292929;
 		    font-weight: normal;
 		    font-size: 40px;
 		    margin: 0;
+		    color: $mainColor;
 		}
 
 		h2{
@@ -53,26 +57,61 @@ $textColor: #292929;
 		    margin: 0;
 		}
 	}
+
+	.color-container{
+		.side-one{
+			h1{
+				color: #fff;
+			}
+		}
+	}
+
+	.idiomas, .tech {
+	    font-weight: bold;
+	    font-size: 18px;
+	    font-family: $fontDetails;
+	    display: block;
+	    margin-bottom: 10px;
+	}
+
+	.tech {
+		margin-top: 20px;
+	}
+
+	.formacao, .experiencia, .conhecimento, footer{
+		a{
+			color: $linkColor;
+			font-weight: bold;
+			text-decoration: none;
+		}
+	}
+
+	.social-links a {
+	    color: $mainColor;
+	    font-size: 25px;
+	    margin: 0 10px;
+
+	    &:hover{
+	    	color: $secondColor;
+	    }
+	}
 /*FIM - Tipografia*/
 
 /*INICIO - Menu de navegação*/
 	header{
-		position: absolute;
+		position: fixed;
 		width: 100%;
 		box-sizing: border-box;
+		background-image: linear-gradient(to left, $secondColor, $mainColor);
+	    background-repeat: repeat-x;
+	    z-index: 100;
 	}
 	nav{
 		max-width: 95%;
-		mask-image: linear-gradient(90deg, rgba(255,255,255,0)0%, #fff 25%, #fff 75%, rgba(255,255,255,0)100%);
-		/*mask-image: linear-gradient(left, rgba(255, 255, 255, 0.6) 0%, #fff 25%, #fff 75%, rgba(255, 255, 255, 0.6) 100%);*/
 		margin: 0 auto;
 
 		ul{
 			text-align: center;
-			background: linear-gradient(90deg, rgba(255,255,255,0)0%, rgba(255,255,255,.2)25%,rgba(255,255,255,.2)75%,rgba(255,255,255,0)100%);
-			/*
-			background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.7) 25%, rgba(255, 255, 255, 0.7) 75%, rgba(255, 255, 255, 0.1) 100%);
-			box-shadow: 0 0 25px rgba(0,0,0,.1), inset 0 0 1px rgba(255,255,255,.6);*/
 			margin: 0;
 
 			li{
@@ -81,18 +120,58 @@ $textColor: #292929;
 				a{
 					padding: 10px;
 					text-transform: uppercase;
-					color: $mainColor;
+					color: #fff;
 					font-size: 14px;
 					text-decoration: none;
 					display: block;
 
-					&:hover{
-						/*box-shadow: 0 0 10px rgba(0,0,0,.1), inset 0 0 1px rgba(255,255,255,.6);*/
-						background: rgba(255,255,255,.1);
-						color: $secondColor;
+					&:hover, &.active, &:active{
+						background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent);
+					    background-size: 50%;
+					    background-repeat: repeat-x;
+					    background-position: bottom;
 					}
 				}
+
 			}
+		}
+	}
+
+	nav ul a.menu-icon,
+	nav ul li:first-child{
+		padding: 10px;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 14px;
+		text-decoration: none;
+		display: none;
+	}
+
+	@media screen and (max-width: 1024px){
+		nav ul li:first-child{display: inline-block;}
+		nav ul li:not(:first-child){display: none;}
+		nav ul a.menu-icon{
+			float: right;
+			display: block;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	@media screen and (max-width: 1024px){
+		nav.responsive {position: relative;}
+		nav.responsive ul a.menu-icon{
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		nav.responsive ul{
+			margin-left: -20px;
+		}
+		nav.responsive ul li{
+			float: none;
+			display: block;
+			text-align: left;
 		}
 	}
 /*FIM - Menu de navegação*/
@@ -188,11 +267,8 @@ $textColor: #292929;
 		text-align: center;
 		padding-bottom: 20px;
 		padding-top: 50px;
-		background: url('http://sites.google.com/site/arianimartinshost/imagens/IMG_20171014_140125_465.jpg');
-		background-size: cover;
-		background-position: center;
-		position: fixed;
-		z-index: -1;
+		background: #fff;
+		height: 100%;
 	}
 	.sobre-desc {
 	    width: 60%;
@@ -231,15 +307,29 @@ $textColor: #292929;
 	.btn-main {
 	  	background-image: linear-gradient(to right, $secondColor 0%, $mainColor 51%, $secondColor 100%);
 	}
+
+	.fade-effect{
+	    background-image: linear-gradient(to top, $mainColor, rgba(255,255,255,0));
+	    background-repeat: repeat-x;
+	    display: inline-block;
+	    width: 100%;
+	    height: 100px;
+	    position: fixed;
+	    bottom: 0;
+	    left: 0;
+	    z-index: 1;
+	}
 /*FIM - Sobre*/
 
 /*INICIO - Divisão principal*/
 	.main-content {
 	    position: absolute;
 	    background: white;
-	    margin-top: 693px; /*Tamanho da área sobre*/
+	    width: 100%;
+    	box-sizing: border-box;
+    	z-index: 2;
 	}
-	.conhecimento, .experiencia, .formacao {
+	.conhecimento, .experiencia, .formacao, .competencia, .portfolio{
 	    width: 90%;
 	    margin: 10px auto 20px auto;
 	    display: flex;
@@ -247,10 +337,15 @@ $textColor: #292929;
 	  	align-items: start;
 	  	align-content: center;
 	 	flex-wrap: wrap;
+	 	padding-top: 25px;
 	}
 
-	.competencia, .portfolio{
-		background: $secondColor;
+	.conhecimento, .competencia, .portfolio{
+		padding-bottom: 25px;
+	}
+
+	.color-container{
+		background: $mainColor;
 	}
 
 	.side-one{
@@ -259,11 +354,27 @@ $textColor: #292929;
 		flex-wrap: wrap;
 		word-wrap: break-word;
 	}
+	@media only screen and (max-width: 1024px){
+		.side-one{
+			width: 100%;
+			margin-bottom: 35px;
+		}
+	}
 
 	.side-two{
 		width: 75%;
 		box-sizing: border-box;
 		flex-wrap: wrap;
+	}
+
+	footer{
+		width: 100%;
+	    box-sizing: border-box;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    z-index: 3;
+	    background: #fff;
 	}
 /*FIM - Divisão principal*/
 
@@ -273,6 +384,7 @@ $textColor: #292929;
 	    display: inline-block;
 	    margin-right: 20px;
 	    margin-top: 15px;
+	    margin-bottom: 20px;
 	}
 
 	.progress-skill {
@@ -289,8 +401,8 @@ $textColor: #292929;
 		}
 	}
 
-	$skillList: (ingles:90%, espanhol:10%, android:73%, windows:50%, php:32%, javascript:15%, wordpress:37%,
-		csharp:50%, java:50%, photoshop:60%, illustrator:20%, html:85%,	css:75%, sass:20%);
+	$skillList: (ingles:90%, espanhol:20%, android:73%, windows:45%, php:60%, javascript:75%, wordpress:60%,
+		csharp:65%, java:60%, photoshop:65%, illustrator:20%, html:85%,	css:75%, sass:30%);
 
 	@mixin animaSkill($name, $limit){
 		animation: $name 3s ease-in-out;
@@ -309,50 +421,70 @@ $textColor: #292929;
 /*FIM - Barras de progresso das Skills*/
 
 /*INICIO - Timeline Experiência e Cursos*/
-	.cv-timeline{
-		overflow: hidden;
-		margin-top: 10px;
+	.event {
+	    margin-bottom: 20px;
+	    overflow: hidden;
 	}
 
-	.timeline-ladoe{
-		float: left;
-		width: 15%;
-		text-align: right;
-	    padding-right: 10px;
-	    box-sizing: border-box;
-	}
-	.timeline-ladod{
-		float: right;
-		width: 85%;
-		border-left: 1px solid $secondColor;
-	    box-sizing: border-box;
-	    padding-left: 5px;
+	.place-name {
+	    font-weight: bold;
+	    font-size: 18px;
+	    font-family: $fontDetails;
+	    display: block;
+	    margin-bottom: 10px;
 	}
 
-	.cv-title-sub { font-weight: bold; }
-	.cv-sub-date { font-size: smaller; }
-	.cv-sub-cargo{ font-weight: bold; }
-	.grupo1, .grupo2{ overflow: hidden; }
-	.cv-title-sub { font-weight: bold; }
-	.cv-sub-desc { padding-bottom: 20px; }
-	.cv-timeline .cv-sub-cargo:before {
-		content: '\f111';
-		font-family: FontAwesome;
-		margin-left: -12px;
-		margin-right: 5px;
-		color: $secondColor;
+	.job-position {
+	    font-family: $fontDetails;
+	    font-size: 15px;
+	    margin-left: 15px;
+	    margin-right: 20px;
+	    float: left;
+	    display: inline-block;
+	    font-weight: bold;
 	}
-	.cv-portfolio .cv-sub-desc:before{
-		content: '\f111';
-	    font-family: FontAwesome;
-	    margin-left: -12px;
-	    color: $secondColor;
+
+	.event-date {
+	    font-family: $fontDetails;
+	    font-size: 13px;
+	    font-style: italic;
 	}
-	.cv-prof .cv-sub-desc {
-	    padding-bottom: 20px;
+
+	@media only screen and (max-width: 1024px){
+		.event-date {
+		    display: block;
+		    clear: both;
+		    margin-left: 15px;
+		}
+	}
+
+	.job-description {
+	    font-size: 15px;
 	    text-align: justify;
-	    padding: 5px;
+	    display: block;
+	    float: right;
+	    margin-left: 15px;
+	    margin-bottom: 20px;
+	    padding-left: 10px;
+	    border-width: 5px;
+	    border-style: solid;
+	    border-image: linear-gradient(to bottom, $secondColor, $mainColor) 1 100%;
+	    border-right: 0;
 	}
 /*FIM - Timeline Experiência e Cursos*/
+
+/*INICIO - Footer*/
+	.copyright {
+	    font-size: 12px;
+	    display: inline-block;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.copyright-date{
+		display: inline-block;
+	}
+/*FIM - Footer*/
+
 
 /* FIM - PAGE STYLING*/

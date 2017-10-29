@@ -2,29 +2,44 @@
 <html>
 <head>
 	<title>CV - Ariani Martins</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
 	<!-- Font Awesome -->
 	<script src="https://use.fontawesome.com/c1dcf9acab.js"></script>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
 </head>
 
 <body>
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Conhecimento</a></li>
-				<li><a href="#">Competências</a></li>
-				<li><a href="#">Experiência Profissional</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Educação Acadêmica e Cursos</a></li>
-				<li><a href="#">Contato</a></li>
+				<li>Menu</li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#conhecimento">Conhecimento</a></li>
+				<li><a href="#competencia">Competências</a></li>
+				<li><a href="#experiencia">Experiência Profissional</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#formacao">Educação Acadêmica e Cursos</a></li>
+				<li><a href="#contato">Contato</a></li>
+				<a href="javascript:void(0);" class="menu-icon" onclick="responsive_menu()">&#9776;</a>
 			</ul>
 		</nav>
 	</header>
 
-	<div class="sobre">
+	<div class="fade-effect"></div>
+	<div id="sobre" class="sobre">
 			<div class="avatar">
 			  <div style="background:url('http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg');"></div>
+			</div>
+			
+			<div class="social-links">
+				<a href="https://www.linkedin.com/in/arianimartins/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="https://codepen.io/arianimartins/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+				<a href="https://github.com/arianimartins"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
 			</div>
 			<h1>Ariani Martins</h1>
 			<h2>Desenvolvedora Web & Mobile</h2>
@@ -41,13 +56,14 @@
 
 	<div class="main-content">
 
-		<div class="conhecimento">
+		<!--Conhecimento-->
+		<div id="conhecimento" class="conhecimento">
 			<div class="side-one">
 				<h1>Conhecimento</h1>
 				<h2>"Produtividade é ser capaz de fazer coisas que você jamais conseguiu" - Franz Kafka</h2>
 			</div>
 			<div class="side-two">
-				<div class="idiomas">Idiomas</div>
+				<div class="idiomas"><i class="fa fa-language" aria-hidden="true"></i> Idiomas</div>
 					<div class="known-container">
 						<div class="known-title">Inglês</div>
 						<div class="progress-skill"><div class="ingles-skill"></div></div>
@@ -58,7 +74,7 @@
 						<div class="progress-skill"><div class="espanhol-skill"></div></div>
 					</div>
 
-				<div class="tech">Tecnologias</div>
+				<div class="tech"><i class="fa fa-laptop" aria-hidden="true"></i> Tecnologias</div>
 					<div class="known-container">
 						<div class="known-title">Android</div>
 						<div class="progress-skill"><div class="android-skill"></div></div>
@@ -121,82 +137,109 @@
 			</div>
 		</div>
 
-		<div class="competencia">
-			<h1>Competências</h1>
+		<!--Competência-->
+		<div id="competencia" class="color-container">
+			<div class="competencia">
+				<div class="side-one">
+					<h1>Competências</h1>
+				</div>
+				<div class="side-two"></div>
+			</div>
 		</div>
 
-		<div class="experiencia">
+		<!--Experiência Profissional-->
+		<div id="experiencia" class="experiencia">
 			<div class="side-one">
 				<h1>Experiência Profissional</h1>
 				<h2>"Programar não é um trabalho, é uma paixão."</h2>
 			</div>
 			<div class="side-two">
-				<div class="cv-timeline">
-					<div class="grupo1">
-						<div class="timeline-ladoe">
-							<div class="cv-title-sub">Call Tecnologia</div>
-							<div class="cv-sub-date">Set/2012 - Abr/2014</div>
+				<div class="timeline">
+					<div class="event event1">
+						<div class="place-name"><i class="fa fa-building" aria-hidden="true"></i> Call Tecnologia</div>
+						<div class="job-position">Programador Pl.</div>
+						<div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> mai/2014 - set/2017</div>
+						<div class="job-description">
+							Desenvolvimento do aplicativo feito para a Copa do Mundo, SelfieCup, e participação no desenvolvimento do aplicativo TáNaMão para Windows Phone. Foi feito também a criação de telas para um aplicativo (Windows Phone) da empresa Cabal para a consulta de locais onde o cartão de benefícios é aceito, porém não foi publicado na loja de aplicativos.
+
+							Refatoração de formulários permitindo uma UX mais intuitiva para o usuário final
 						</div>
-						<div class="timeline-ladod">
-							<div class="cv-sub-cargo">Programador Jr.</div>
-						  <div class="cv-sub-desc">Participação no desenvolvimento do aplicativo PrefeituraSP - Chuvas de Verão contrinuindo com layout e as funções de busca de Clima/Previsão do Tempo e Qualidade do Ar. Participação em partes do desenvolvimento do aplicativo Lembrete - Zona Azul e arte. Diversos outros aplicativos foram feitos para testes que não foram publicados ou tiveram o desenvolvimento interrompido.</div>
-						</div>
-					</div>
-					<div class="grupo2">
-						<div class="timeline-ladoe">		
-							<div class="cv-sub-date">Mai/2014 - Presente</div>
-						</div>
-						<div class="timeline-ladod">
-							<div class="cv-sub-cargo">Programador Pl.</div>
-							<div class="cv-sub-desc">Desenvolvimento do aplicativo feito para a Copa do Mundo, SelfieCup, e participação no desenvolvimento do aplicativo TáNaMão para Windows Phone. Foi feito também a criação de telas para um aplicativo (Windows Phone) da empresa Cabal para a consulta de locais onde o cartão de benefícios é aceito, porém não foi publicado na loja de aplicativos. </div>
+
+						<div class="job-position">Programador Jr.</div>
+						<div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> set/2012 - abr/2014</div>
+						<div class="job-description">
+							Participação no desenvolvimento do aplicativo PrefeituraSP - Chuvas de Verão contrinuindo com layout e as funções de busca de Clima/Previsão do Tempo e Qualidade do Ar. Participação em partes do desenvolvimento do aplicativo Lembrete - Zona Azul e arte. Diversos outros aplicativos foram feitos para testes que não foram publicados ou tiveram o desenvolvimento interrompido.
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="portfolio">
-			<h1>Portfolio</h1>
+		<!--Portfolio-->
+		<div id="portfolio" class="color-container">
+			<div class="portfolio">
+				<div class="side-one">
+					<h1>Portfolio</h1>
+				</div>
+				<div class="side-two"></div>
+			</div>
 		</div>
 
-		<div class="formacao">
+		<!--Formação e Cursos-->
+		<div id="formacao" class="formacao">
 			<div class="side-one">
 				<h1>Formação e Cursos</h1>
-				<h2>"Subtítulo"</h2>
+				<h2>"Bons produtos são desenvolvidos por pessoas que querem utilizá-los." - David Karp</h2>
 			</div>
 			<div class="side-two">
-				<div class="cv-timeline">
-					<div class="grupo1">
-						<div class="timeline-ladoe">
-							<div class="cv-title-sub">Universidade Anhembi Morumbi</div>
-							<div class="cv-sub-date">fev/2010 - dez/2013</div>
-						</div>
-						<div class="timeline-ladod">
-							<div class="cv-sub-cargo">Bacharelado - Sistemas de Informação</div>
-							<div class="cv-sub-desc">Durante o curso houve contato com as tecnologias e metodologias Oracle, C#, Java, PMI, RUP, UML, PMBOK. Desenvolvimento de metodologias de sistemas focadas em inteligência e estratégias de negócios.</div>
+				<div class="timeline">
+					<div class="event event3">
+						<div class="place-name"><i class="fa fa-certificate" aria-hidden="true"></i> edX - Microsoft</div>
+						<div class="job-position">Build Web APIs using ASP.NET</div>
+						<div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> set/2017</div>
+						<div class="job-description">
+							Curso online realizado pela <b>Microsoft</b> através da plataforma de ensino <b>edX</b> com média final avaliada em 89%.
+							O objetivo final do curso é capacitar o aluno a criar RESTful Web Services utilizando ASP.NET.
+							<br><a href="https://courses.edx.org/certificates/1de691824048462495e7f4986186ada4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bllau8zjbSlmV5wZEbKKfrQ%3D%3D">Verificar Certificado</a>
 						</div>
 					</div>
-					<div class="grupo2">
-						<div class="timeline-ladoe">
-							<div class="cv-title-sub">Caelum</div>	
-						</div>
-						<div class="timeline-ladod">
-							<div class="cv-sub-cargo">Formação Android</div>
-							<div class="cv-sub-desc">O curso é formado por duas etapas, o curso de Desenvolvimento Móvel com Google Andorid e Curso de Técnicas de Desenvolvimento Android Avançado.</div>
+					<div class="event event2">
+						<div class="place-name"><i class="fa fa-book" aria-hidden="true"></i> Caelum</div>	
+						<div class="job-position">Formação Android</div>
+						<div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> ago/2014</div>
+						<div class="job-description">O curso é formado por duas etapas, o curso de Desenvolvimento Móvel com Google Andorid e Curso de Técnicas de Desenvolvimento Android Avançado.</div>
+					</div>
+					<div class="event event1">
+						<div class="place-name"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Universidade Anhembi Morumbi</div>
+						<div class="job-position">Bacharelado - Sistemas de Informação</div>
+						<div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> fev/2010 - dez/2013</div>
+						<div class="job-description">
+							Durante o curso houve contato com as tecnologias e metodologias Oracle, C#, Java, PMI, RUP, UML, PMBOK. Desenvolvimento de metodologias de sistemas focadas em inteligência e estratégias de negócios.
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<footer id="contato">
+			<div class="social">
+				<a href="https://www.linkedin.com/in/arianimartins/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="https://codepen.io/arianimartins/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+				<a href="https://github.com/arianimartins"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+			</div>
+
+			<div class="contato">
+				<i class="fa fa-envelope" aria-hidden="true"></i> contato@arianimartins.com
+				<br>
+				<i class="fa fa-mobile" aria-hidden="true"></i> (11) 96466-9459
+			</div>
+
+			<div class="copyright">
+				<div class="copyright-date"></div> - Todos os direitos reservados - <a href="#">Ariani Martins</a>
+			</div>
+		</footer>
 	</div>
 
-	<footer>
-		<div class="social"></div>
-		<div class="contato"></div>
-
-		<div class="copyright"></div>
-	</footer>
 
 </body>
 
