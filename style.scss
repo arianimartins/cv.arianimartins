@@ -28,12 +28,24 @@ $linkColor: #2897ce;
 		    font-family: $fontTitle;
 		}
 
+		@media screen and (max-width: 500px){
+			h1{
+				font-size: 40px;
+			}
+		}
+
 		h2 {
 		    font-weight: lighter;
 		    font-size: 25px;
 		    margin: -15px 0 0 0;
 		    font-family: $fontDetails;
 		    color: $mainColor;
+		}
+
+		@media screen and (max-width: 500px){
+			h2{
+				font-size: 18px;
+			}
 		}
 
 		.sobre-desc p{
@@ -460,7 +472,6 @@ $linkColor: #2897ce;
 
 	.job-description {
 	    font-size: 15px;
-	    text-align: justify;
 	    display: block;
 	    float: right;
 	    margin-left: 15px;

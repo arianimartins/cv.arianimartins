@@ -416,12 +416,22 @@ header, body {
   font-weight: normal;
   font-family: "Abril Fatface", cursive;
 }
+@media screen and (max-width: 500px) {
+  .sobre h1 {
+    font-size: 40px;
+  }
+}
 .sobre h2 {
   font-weight: lighter;
   font-size: 25px;
   margin: -15px 0 0 0;
   font-family: "Merriweather", serif;
   color: #8fd3f4;
+}
+@media screen and (max-width: 500px) {
+  .sobre h2 {
+    font-size: 18px;
+  }
 }
 .sobre .sobre-desc p {
   text-align: justify;
@@ -1160,7 +1170,6 @@ footer {
 }
 .job-description {
   font-size: 15px;
-  text-align: justify;
   display: block;
   float: right;
   margin-left: 15px;
