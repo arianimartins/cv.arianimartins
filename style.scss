@@ -278,7 +278,7 @@ $linkColor: #2897ce;
 	.sobre{
 		text-align: center;
 		padding-bottom: 20px;
-		padding-top: 50px;
+		padding-top: 30px;
 		background: #fff;
 		height: 100%;
 	}
@@ -335,11 +335,10 @@ $linkColor: #2897ce;
 
 /*INICIO - Divisão principal*/
 	.main-content {
-	    position: absolute;
 	    background: white;
 	    width: 100%;
     	box-sizing: border-box;
-    	z-index: 2;
+    	min-height: calc(100vh - 100px);
 	}
 	.conhecimento, .experiencia, .formacao, .competencia, .portfolio{
 	    width: 90%;
@@ -382,9 +381,6 @@ $linkColor: #2897ce;
 	footer{
 		width: 100%;
 	    box-sizing: border-box;
-	    position: absolute;
-	    left: 0;
-	    bottom: 0;
 	    z-index: 3;
 	    background: #fff;
 	}
@@ -536,6 +532,18 @@ $linkColor: #2897ce;
 
 		a{
 			font-weight: normal;
+		}
+	}
+
+	@media only screen and (max-width: 640px){
+		.contato {
+		    border-left: none;
+		}
+		.footer-content{
+			text-align: center;
+		}
+		.footer-place{
+			height: 80px;
 		}
 	}
 /*FIM - Footer*/
