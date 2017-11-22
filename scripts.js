@@ -125,3 +125,23 @@ function responsive_menu(){
 		x.removeClass('responsive');
 	}
 }
+
+//PORTFOLIO (MixItUp plugin - http://mixitup.io)
+$(function () {
+	var filterList = { 
+		init: function () {
+
+			$('#portfoliolist').mixItUp({ 
+				selectors: {
+					target: '.portfolio',
+					filter: '.filter'	
+				},
+				load: {
+					filter: 'all' // show app tab on first load
+				}   
+			});								
+		}
+	};
+
+	filterList.init();
+});	

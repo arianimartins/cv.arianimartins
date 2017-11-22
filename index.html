@@ -14,6 +14,8 @@
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="viewportchecker.min.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
+
+	<script type="text/javascript" src="jquery.mixitup.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +27,7 @@
 				<li><a href="#conhecimento">Conhecimento</a></li>
 				<li><a href="#competencia">Competências</a></li>
 				<li><a href="#experiencia">Experiência Profissional</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#pfolio">Portfolio</a></li>
 				<li><a href="#formacao">Formação e Cursos</a></li>
 				<li><a href="#contato">Contato</a></li>
 				<a href="javascript:void(0);" class="menu-icon" onclick="responsive_menu()">&#9776;</a><!--Responsive menu button-->
@@ -179,12 +181,263 @@
 		</div>
 
 		<!--Portfolio-->
-		<div id="portfolio" class="color-container area">
-			<div class="portfolio">
+		<div id="pfolio" class="color-container area">
+			<div class="pfolio">
 				<div class="side-one">
 					<h1>Portfolio</h1>
 				</div>
-				<div class="side-two"></div>
+				<div class="side-two">
+
+					<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="all">All</span></li>
+						<li><span class="filter" data-filter=".and">Android</span></li>
+						<li><span class="filter" data-filter=".wind">Windows</span></li>
+						<li><span class="filter" data-filter=".web">Web</span></li>
+						<li><span class="filter" data-filter=".des">Design</span></li>
+					</ul>
+
+					<div id="portfoliolist">
+						<!-- Chuvas de Verão -->
+					  	<div class="portfolio and" data-cat="and">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" />
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Chuvas de Verão</a> 
+					          			<span class="text-category">Android</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Zona Azul -->
+					  	<div class="portfolio and" data-cat="and">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Lembrete - Zona Azul</a> 
+					          			<span class="text-category">Android</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Saldo Café -->
+					  	<div class="portfolio and" data-cat="and">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" />
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Saldo Café</a> 
+					          			<span class="text-category">Android</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Selfiecup -->
+					  	<div class="portfolio and" data-cat="and">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" />
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">SelfieCup</a> 
+					          			<span class="text-category">Android</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Ta na mão -->
+					  	<div class="portfolio wind" data-cat="wind">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Tá Na Mão</a> 
+					          			<span class="text-category">Windows Phone</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- BrBPO -->
+					  	<div class="portfolio web" data-cat="web">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">BrBPO</a> 
+					          			<span class="text-category">Web</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Wiki DS -->
+					  	<div class="portfolio web" data-cat="web">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Wiki - DS</a> 
+					          			<span class="text-category">Web</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- MAIS -->
+					  	<!-- Blog -->
+					  	<div class="portfolio web" data-cat="web">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Blog Pessoal</a> 
+					          			<span class="text-category">Web</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Heroi da Cidade -->
+					  	<div class="portfolio and" data-cat="and">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Herói da Cidade</a> 
+					          			<span class="text-category">Android</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Heroi da Cidade -->
+					  	<div class="portfolio wind" data-cat="wind">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Cabal</a> 
+					          			<span class="text-category">Windows Phone</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Heroi da Cidade -->
+					  	<div class="portfolio and" data-cat="and">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">RestTester</a> 
+					          			<span class="text-category">Android</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- SPaulo 2014 -->
+					  	<div class="portfolio and" data-cat="and">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">SPaulo 2014</a> 
+					          			<span class="text-category">Android</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Cartão Postal -->
+					  	<div class="portfolio des" data-cat="des">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Cartão Postal</a> 
+					          			<span class="text-category">Design</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Case - Sabesp -->
+					  	<div class="portfolio des" data-cat="des">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Case Sabesp</a> 
+					          			<span class="text-category">Design</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Case - Detran -->
+					  	<div class="portfolio des" data-cat="des">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Case Detran</a> 
+					          			<span class="text-category">Design</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Case - Defensoria -->
+					  	<div class="portfolio des" data-cat="des">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Case Defensoria</a> 
+					          			<span class="text-category">Design</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Case - Poupatempo -->
+					  	<div class="portfolio des" data-cat="des">
+					    	<div class="portfolio-wrapper">
+					      		<img src="http://sites.google.com/site/arianimartinshost/imagens/received_849127871809236%5B1%5D.jpeg" alt="" /> <!--Imagem-->
+					      		<div class="label">
+					        		<div class="label-text">
+					          			<a class="text-title">Case Poupatempo</a> 
+					          			<span class="text-category">Design</span>
+					        		</div>
+					        		<div class="label-bg"> </div>
+					      		</div>
+					    	</div>
+					  	</div>
+					</div>
+
+				</div>
 			</div>
 		</div>
 
