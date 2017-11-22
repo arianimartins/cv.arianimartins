@@ -13,6 +13,9 @@ $fontContent: 'Lato', sans-serif;
 $textColor: #6b6b6b;
 $linkColor: #2897ce;
 
+.hidden{ opacity:0; }
+.visible{ opacity:1; }
+
 /*INICIO - Tipografia*/
 	header,body{
 		font-family: $fontContent;
@@ -364,6 +367,7 @@ $linkColor: #2897ce;
 		box-sizing: border-box;
 		flex-wrap: wrap;
 		word-wrap: break-word;
+		padding-right: 5px;
 	}
 	@media only screen and (max-width: 1024px){
 		.side-one{
@@ -421,7 +425,7 @@ $linkColor: #2897ce;
 	}
 
 	@each $item, $size in $skillList{	
-		.#{$item}-skill{
+		.visible .#{$item}-skill{
 			width: $size;
 			@include animaSkill(skill#{$item}, $size);
 		}
@@ -475,9 +479,10 @@ $linkColor: #2897ce;
 	    padding-left: 10px;
 	    border-width: 5px;
 	    border-style: solid;
-	    border-image: linear-gradient(to bottom, $secondColor, $mainColor) 1 100%;
 	    border-right: 0;
+		border-image: linear-gradient(to bottom, $secondColor, $mainColor) 1 100%;
 	}
+
 /*FIM - Timeline Experiência e Cursos*/
 
 /*INICIO - Footer*/

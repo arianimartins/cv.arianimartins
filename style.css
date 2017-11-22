@@ -401,6 +401,14 @@ th {
 }
 
 /* INICIO - PAGE STYLING*/
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
 /*INICIO - Tipografia*/
 header, body {
   font-family: "Lato", sans-serif;
@@ -781,6 +789,7 @@ nav ul li:first-child {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   word-wrap: break-word;
+  padding-right: 5px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -832,7 +841,7 @@ footer {
   height: inherit;
 }
 
-.ingles-skill {
+.visible .ingles-skill {
   width: 90%;
   -webkit-animation: skillingles 3s ease-in-out;
   animation: skillingles 3s ease-in-out;
@@ -853,7 +862,7 @@ footer {
     width: 90%;
   }
 }
-.espanhol-skill {
+.visible .espanhol-skill {
   width: 20%;
   -webkit-animation: skillespanhol 3s ease-in-out;
   animation: skillespanhol 3s ease-in-out;
@@ -874,7 +883,7 @@ footer {
     width: 20%;
   }
 }
-.android-skill {
+.visible .android-skill {
   width: 73%;
   -webkit-animation: skillandroid 3s ease-in-out;
   animation: skillandroid 3s ease-in-out;
@@ -895,7 +904,7 @@ footer {
     width: 73%;
   }
 }
-.windows-skill {
+.visible .windows-skill {
   width: 45%;
   -webkit-animation: skillwindows 3s ease-in-out;
   animation: skillwindows 3s ease-in-out;
@@ -916,7 +925,7 @@ footer {
     width: 45%;
   }
 }
-.php-skill {
+.visible .php-skill {
   width: 60%;
   -webkit-animation: skillphp 3s ease-in-out;
   animation: skillphp 3s ease-in-out;
@@ -937,7 +946,7 @@ footer {
     width: 60%;
   }
 }
-.javascript-skill {
+.visible .javascript-skill {
   width: 75%;
   -webkit-animation: skilljavascript 3s ease-in-out;
   animation: skilljavascript 3s ease-in-out;
@@ -958,7 +967,7 @@ footer {
     width: 75%;
   }
 }
-.wordpress-skill {
+.visible .wordpress-skill {
   width: 60%;
   -webkit-animation: skillwordpress 3s ease-in-out;
   animation: skillwordpress 3s ease-in-out;
@@ -979,7 +988,7 @@ footer {
     width: 60%;
   }
 }
-.csharp-skill {
+.visible .csharp-skill {
   width: 65%;
   -webkit-animation: skillcsharp 3s ease-in-out;
   animation: skillcsharp 3s ease-in-out;
@@ -1000,7 +1009,7 @@ footer {
     width: 65%;
   }
 }
-.java-skill {
+.visible .java-skill {
   width: 60%;
   -webkit-animation: skilljava 3s ease-in-out;
   animation: skilljava 3s ease-in-out;
@@ -1021,7 +1030,7 @@ footer {
     width: 60%;
   }
 }
-.photoshop-skill {
+.visible .photoshop-skill {
   width: 65%;
   -webkit-animation: skillphotoshop 3s ease-in-out;
   animation: skillphotoshop 3s ease-in-out;
@@ -1042,7 +1051,7 @@ footer {
     width: 65%;
   }
 }
-.illustrator-skill {
+.visible .illustrator-skill {
   width: 20%;
   -webkit-animation: skillillustrator 3s ease-in-out;
   animation: skillillustrator 3s ease-in-out;
@@ -1063,7 +1072,7 @@ footer {
     width: 20%;
   }
 }
-.html-skill {
+.visible .html-skill {
   width: 85%;
   -webkit-animation: skillhtml 3s ease-in-out;
   animation: skillhtml 3s ease-in-out;
@@ -1084,7 +1093,7 @@ footer {
     width: 85%;
   }
 }
-.css-skill {
+.visible .css-skill {
   width: 75%;
   -webkit-animation: skillcss 3s ease-in-out;
   animation: skillcss 3s ease-in-out;
@@ -1105,7 +1114,7 @@ footer {
     width: 75%;
   }
 }
-.sass-skill {
+.visible .sass-skill {
   width: 30%;
   -webkit-animation: skillsass 3s ease-in-out;
   animation: skillsass 3s ease-in-out;
@@ -1173,12 +1182,12 @@ footer {
   padding-left: 10px;
   border-width: 5px;
   border-style: solid;
+  border-right: 0;
   -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#84fab0), to(#8fd3f4)) 1 100%;
   -webkit-border-image: -webkit-linear-gradient(top, #84fab0, #8fd3f4) 1 100%;
   -o-border-image: -o-linear-gradient(top, #84fab0, #8fd3f4) 1 100%;
   border-image: -webkit-gradient(linear, left top, left bottom, from(#84fab0), to(#8fd3f4)) 1 100%;
   border-image: linear-gradient(to bottom, #84fab0, #8fd3f4) 1 100%;
-  border-right: 0;
 }
 
 /*FIM - Timeline Experi├¬ncia e Cursos*/

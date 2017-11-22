@@ -86,6 +86,15 @@ window.onscroll = function(){
     });
 }
 
+jQuery(document).ready(function() {
+    jQuery('.area').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated slideInUp',
+  		classToRemove: 'hidden',
+  		removeClassAfterAnimation: false,
+        offset: 100
+       });
+});
+
 //ATUALIZA O ANO DO COPYRIGHT
 function copyright_date() {
 	var firstDate = 2017;
