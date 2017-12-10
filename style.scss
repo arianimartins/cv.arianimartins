@@ -468,6 +468,21 @@ $linkColor: #2897ce;
     color: white;
 }
 
+@media only screen and (max-width: 1024px){
+
+	.comp-list{
+		width: 100%;
+    	margin-bottom: 20px;
+	}
+
+	.comp-details{
+		width: 100%;
+    	text-align: justify;
+	}
+
+}
+
+
 /*INICIO - Timeline Experiência e Cursos*/
 	.event {
 	    margin-bottom: 20px;
