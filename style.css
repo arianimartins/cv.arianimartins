@@ -711,6 +711,7 @@ nav ul li:first-child {
   width: 200px;
   font-family: "Lato", sans-serif;
   font-size: 14px;
+  text-decoration: none;
 }
 .btn:hover {
   background-position: right center;
@@ -771,6 +772,10 @@ nav ul li:first-child {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 25px;
+}
+
+.conhecimento, .experiencia, .formacao {
+  background: #fff;
 }
 
 .conhecimento, .competencia, .pfolio {
@@ -1136,6 +1141,42 @@ footer {
   }
 }
 /*FIM - Barras de progresso das Skills*/
+/*INICIO - Compet├¬ncias*/
+.comp-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.competencias {
+  display: block;
+  color: white;
+  margin: 10px 0;
+  font-size: 20px;
+}
+.competencias i {
+  margin-right: 5px;
+  width: 15px;
+  text-align: center;
+}
+
+.comp-list {
+  display: inline-block;
+  width: 20%;
+}
+
+.comp-details {
+  display: inline-block;
+  width: 79%;
+  vertical-align: top;
+  color: white;
+}
+
 /*INICIO - Timeline Experi├¬ncia e Cursos*/
 .event {
   margin-bottom: 20px;
@@ -1164,6 +1205,7 @@ footer {
   font-family: "Merriweather", serif;
   font-size: 13px;
   font-style: italic;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1176,7 +1218,6 @@ footer {
 .job-description {
   font-size: 15px;
   display: block;
-  float: right;
   margin-left: 15px;
   margin-bottom: 20px;
   padding-left: 10px;
@@ -1298,7 +1339,7 @@ html {
   display: block;
   padding: 5px 20px;
   text-decoration: none;
-  color: #2897ce;
+  color: #fff;
   cursor: pointer;
 }
 #filters li span.active {

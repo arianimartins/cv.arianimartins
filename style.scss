@@ -313,6 +313,7 @@ $linkColor: #2897ce;
 	  	width: 200px;
 	  	font-family: $fontContent;
 	  	font-size: 14px;
+	  	text-decoration: none;
 
 	  	&:hover{
 	  		background-position: right center;
@@ -352,6 +353,10 @@ $linkColor: #2897ce;
 	  	align-content: center;
 	 	flex-wrap: wrap;
 	 	padding-top: 25px;
+	}
+
+	.conhecimento, .experiencia, .formacao{
+		background: #fff;
 	}
 
 	.conhecimento, .competencia, .pfolio{
@@ -432,6 +437,37 @@ $linkColor: #2897ce;
 	}
 /*FIM - Barras de progresso das Skills*/
 
+/*INICIO - Competências*/
+.comp-box{
+	display: flex;
+    align-items: center;
+}
+
+.competencias {
+    display: block;
+    color: white;
+    margin: 10px 0;
+    font-size: 20px;
+
+    i {
+	    margin-right: 5px;
+	    width: 15px;
+	    text-align: center;
+	}
+}
+
+.comp-list {
+    display: inline-block;
+    width: 20%;
+}
+
+.comp-details {
+    display: inline-block;
+    width: 79%;
+    vertical-align: top;
+    color: white;
+}
+
 /*INICIO - Timeline Experiência e Cursos*/
 	.event {
 	    margin-bottom: 20px;
@@ -460,6 +496,7 @@ $linkColor: #2897ce;
 	    font-family: $fontDetails;
 	    font-size: 13px;
 	    font-style: italic;
+	    display: inline-block;
 	}
 
 	@media only screen and (max-width: 1024px){
@@ -473,7 +510,6 @@ $linkColor: #2897ce;
 	.job-description {
 	    font-size: 15px;
 	    display: block;
-	    float: right;
 	    margin-left: 15px;
 	    margin-bottom: 20px;
 	    padding-left: 10px;
@@ -577,7 +613,7 @@ $linkColor: #2897ce;
 				display: block;
 				padding:5px 20px;		
 				text-decoration:none;
-				color: $linkColor;
+				color: #fff;
 				cursor: pointer;
 
 				&.active{

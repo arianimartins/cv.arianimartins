@@ -60,6 +60,7 @@ $.fn.extend({
 window.onscroll = function(){
 	var top = window.pageYOffset || document.documentElement.scrollTop;
 
+	//Ajusta Menu com Scroll
 	if( top > $sobreHeight ) {
 		$('header').css({'position':'fixed'});
 		if(!$('header').hasClass('fixa')){
@@ -72,6 +73,7 @@ window.onscroll = function(){
 		}
 	}
 
+	//Ajusta Links do Menu com Scroll
 	$('header a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
@@ -86,6 +88,7 @@ window.onscroll = function(){
     });
 }
 
+//CARREGA ITENS CONFORME SCROLL
 jQuery(document).ready(function() {
     jQuery('.area').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated slideInUp',
