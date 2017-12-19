@@ -6,6 +6,7 @@
  *    user zoom.
  */
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Merriweather|Lato");
+@import url("marveldevice.min.css");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -409,6 +410,125 @@ th {
   opacity: 1;
 }
 
+/*INICIO - Marvel Devices e Portfolio popups*/
+.mfp-close {
+  margin: 20px;
+}
+
+.folioitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 25px;
+  background: #fff;
+}
+
+.marvel-device {
+  zoom: 0.5 !important;
+}
+
+.marvel-notebook {
+  zoom: 0.25 !important;
+}
+
+.marvel-device.note8 {
+  height: 750px !important;
+}
+
+.screen img {
+  width: 100%;
+  height: 100%;
+}
+
+.port-orig-link img {
+  margin-left: -10px !important;
+}
+
+.p-imagens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.p-imagens .p-icon {
+  margin-right: 20px;
+  -ms-flex-preferred-size: 15%;
+  flex-basis: 15%;
+}
+
+.p-imagens .p-icon img {
+  width: 125px;
+  height: 125px;
+}
+
+.p-imagens .p-icon-wide {
+  margin-right: 20px;
+  -ms-flex-preferred-size: 80%;
+  flex-basis: 80%;
+}
+
+.p-imagens .p-icon-wide img {
+  width: 250px;
+  height: 125px;
+}
+
+.p-imagens .p-prints img {
+  width: 200px;
+}
+
+.p-descricao {
+  margin-bottom: 20px;
+}
+
+.folioitem .side-two i {
+  font-size: 35px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+  .folioitem .side-two h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .folioitem .side-two i {
+    display: inline-block;
+    width: 35%;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .folioitem .side-two h2 {
+    display: inline-block;
+  }
+
+  .folioitem .side-two .p-imagens {
+    margin: auto;
+  }
+
+  .folioitem .side-two .port-orig-link {
+    text-align: center;
+  }
+
+  .folioitem .side-two .p-prints {
+    text-align: center;
+  }
+
+  .folioitem .side-two .p-prints img {
+    margin-bottom: 5px;
+  }
+
+  .folioitem .side-two .p-icon {
+    margin: auto;
+  }
+}
+/*FIM - Marvel Devices e Portfolio popups*/
 /*INICIO - Tipografia*/
 header, body {
   font-family: "Lato", sans-serif;
@@ -488,6 +608,19 @@ header, body {
 }
 .social-links a:hover {
   color: #84fab0;
+}
+
+.p-empresa {
+  font-size: 15px !important;
+  margin-bottom: 25px !important;
+  margin-top: 0 !important;
+  font-weight: normal;
+}
+
+.p-nome {
+  display: inline-block;
+  padding: 0;
+  margin: 0 20px 0 0;
 }
 
 /*FIM - Tipografia*/
@@ -675,21 +808,16 @@ nav ul li:first-child {
 
 .sobre-btns {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 60%;
@@ -754,21 +882,16 @@ nav ul li:first-child {
   width: 90%;
   margin: 10px auto 20px auto;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: start;
-  -webkit-align-items: start;
   -ms-flex-align: start;
   align-items: start;
-  -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 25px;
@@ -790,24 +913,24 @@ nav ul li:first-child {
   width: 25%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   word-wrap: break-word;
   padding-right: 5px;
 }
 
+/*TESTAAAR*/
 @media only screen and (max-width: 1024px) {
   .side-one {
     width: 100%;
     margin-bottom: 35px;
+    text-align: center;
   }
 }
 .side-two {
   width: 75%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -1144,11 +1267,9 @@ footer {
 /*INICIO - Compet├¬ncias*/
 .comp-box {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
@@ -1188,6 +1309,7 @@ footer {
     text-align: justify;
   }
 }
+/*FIM - Compet├¬ncias*/
 /*INICIO - Timeline Experi├¬ncia e Cursos*/
 .event {
   margin-bottom: 20px;
@@ -1264,18 +1386,14 @@ footer {
   height: 50px;
   text-align: center;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   background: #f1f1f1;

@@ -1,9 +1,9 @@
 @import 'normalize';
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Merriweather|Lato');
+@import url('marveldevice.min.css');
 
 /* INICIO - PAGE STYLING*/
 $textColor: rgb(21,21,21);
-$linkColor: cyan;
 $secondColor: #84fab0;
 $mainColor: #8fd3f4;
 $avatarSize: 190px;
@@ -15,6 +15,109 @@ $linkColor: #2897ce;
 
 .hidden{ opacity:0; }
 .visible{ opacity:1; }
+
+/*INICIO - Marvel Devices e Portfolio popups*/
+	.mfp-close{
+		margin: 20px;
+	}
+	.folioitem{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 10px;
+		padding: 25px;
+		background: #fff;
+	}
+	.marvel-device {
+	  zoom: 0.5 !important;
+	}
+
+	.marvel-notebook{
+		zoom: 0.25 !important;
+	}
+
+	.marvel-device.note8 {
+	  height: 750px !important;
+	}
+
+	.screen img {
+	  width: 100%;
+	  height: 100%;
+	}
+
+	.port-orig-link img {
+	  margin-left: -10px !important;
+	}
+
+	.p-imagens {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  margin-bottom: 30px;
+	  -ms-flex-wrap: wrap;
+	  flex-wrap: wrap;
+	}
+	.p-imagens .p-icon {
+	  margin-right: 20px;
+	  -ms-flex-preferred-size: 15%;
+	  flex-basis: 15%;
+	}
+	.p-imagens .p-icon img {
+	  width: 125px;
+	  height: 125px;
+	}
+	.p-imagens .p-icon-wide {
+	  margin-right: 20px;
+	  -ms-flex-preferred-size: 80%;
+	  flex-basis: 80%;
+	}
+	.p-imagens .p-icon-wide img {
+	  width: 250px;
+	  height: 125px;
+	}
+	.p-imagens .p-prints img {
+	  width: 200px;
+	}
+
+	.p-descricao {
+	  margin-bottom: 20px;
+	}
+
+	.folioitem .side-two i{
+		font-size: 35px;
+		display: inline-block;
+	}
+
+	@media only screen and (max-width: 1024px) {
+	  .folioitem .side-two h1 {
+	    text-align: center;
+	    width: 100%;
+	  }
+	  .folioitem .side-two i {
+	    display: inline-block;
+	    width: 35%;
+	    text-align: right;
+	    margin-right: 10px;
+	  }
+	  .folioitem .side-two h2 {
+	    display: inline-block;
+	  }
+	  .folioitem .side-two .p-imagens {
+	    margin: auto;
+	  }
+	  .folioitem .side-two .port-orig-link {
+	    text-align: center;
+	  }
+	  .folioitem .side-two .p-prints {
+	    text-align: center;
+	  }
+	  .folioitem .side-two .p-prints img {
+	    margin-bottom: 5px;
+	  }
+	  .folioitem .side-two .p-icon {
+	    margin: auto;
+	  }
+	}
+/*FIM - Marvel Devices e Portfolio popups*/
 
 /*INICIO - Tipografia*/
 	header,body{
@@ -110,6 +213,21 @@ $linkColor: #2897ce;
 	    	color: $secondColor;
 	    }
 	}
+
+	.p-empresa{
+		font-size: 15px !important;
+		margin-bottom: 25px !important;
+		margin-top: 0 !important;
+		font-weight: normal;
+	}
+
+	.p-nome{
+		display: inline-block;
+	    padding: 0;
+	    margin: 0 20px 0 0;
+	}
+
+	
 /*FIM - Tipografia*/
 
 /*INICIO - Menu de navegação*/
@@ -374,10 +492,12 @@ $linkColor: #2897ce;
 		word-wrap: break-word;
 		padding-right: 5px;
 	}
+	/*TESTAAAR*/
 	@media only screen and (max-width: 1024px){
 		.side-one{
 			width: 100%;
 			margin-bottom: 35px;
+			text-align: center;
 		}
 	}
 
@@ -438,50 +558,50 @@ $linkColor: #2897ce;
 /*FIM - Barras de progresso das Skills*/
 
 /*INICIO - Competências*/
-.comp-box{
-	display: flex;
-    align-items: center;
-}
-
-.competencias {
-    display: block;
-    color: white;
-    margin: 10px 0;
-    font-size: 20px;
-
-    i {
-	    margin-right: 5px;
-	    width: 15px;
-	    text-align: center;
-	}
-}
-
-.comp-list {
-    display: inline-block;
-    width: 20%;
-}
-
-.comp-details {
-    display: inline-block;
-    width: 79%;
-    vertical-align: top;
-    color: white;
-}
-
-@media only screen and (max-width: 1024px){
-
-	.comp-list{
-		width: 100%;
-    	margin-bottom: 20px;
+	.comp-box{
+		display: flex;
+	    align-items: center;
 	}
 
-	.comp-details{
-		width: 100%;
-    	text-align: justify;
+	.competencias {
+	    display: block;
+	    color: white;
+	    margin: 10px 0;
+	    font-size: 20px;
+
+	    i {
+		    margin-right: 5px;
+		    width: 15px;
+		    text-align: center;
+		}
 	}
 
-}
+	.comp-list {
+	    display: inline-block;
+	    width: 20%;
+	}
 
+	.comp-details {
+	    display: inline-block;
+	    width: 79%;
+	    vertical-align: top;
+	    color: white;
+	}
+
+	@media only screen and (max-width: 1024px){
+
+		.comp-list{
+			width: 100%;
+	    	margin-bottom: 20px;
+		}
+
+		.comp-details{
+			width: 100%;
+	    	text-align: justify;
+		}
+
+	}
+/*FIM - Competências*/
 
 /*INICIO - Timeline Experiência e Cursos*/
 	.event {
@@ -533,7 +653,6 @@ $linkColor: #2897ce;
 	    border-right: 0;
 		border-image: linear-gradient(to bottom, $secondColor, $mainColor) 1 100%;
 	}
-
 /*FIM - Timeline Experiência e Cursos*/
 
 /*INICIO - Footer*/
@@ -730,8 +849,6 @@ $linkColor: #2897ce;
 			width: 70%;
 		}
 	}
-
-
 /*FIM - Portfolio Galeria*/
 
 /* FIM - PAGE STYLING*/

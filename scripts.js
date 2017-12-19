@@ -31,6 +31,14 @@ jQuery(document).ready(function($){
 		return false;
 	});
 
+	$('.popup').magnificPopup({
+	  type: 'inline',
+	  midClick: true,
+	  gallery:{
+	    enabled:false
+	  }
+	});
+
 });
 
 $.fn.extend({
