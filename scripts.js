@@ -31,6 +31,7 @@ jQuery(document).ready(function($){
 		return false;
 	});
 
+	//POPUPS
 	$('.popup').magnificPopup({
 	  type: 'inline',
 	  midClick: true,
