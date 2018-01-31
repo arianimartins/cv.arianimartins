@@ -87,6 +87,11 @@ $linkColor: #2897ce;
 		display: inline-block;
 	}
 
+	.caseimg{
+		width: auto;
+		max-width: 100%;
+	}
+
 	@media only screen and (max-width: 1024px) {
 	  .folioitem .side-two h1, .folioitem .oneside h1 {
 	    text-align: center;
@@ -117,6 +122,11 @@ $linkColor: #2897ce;
 	    margin: auto;
 	  }
 	}
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
 /*FIM - Marvel Devices e Portfolio popups*/
 
 /*INICIO - Tipografia*/

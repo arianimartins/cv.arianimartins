@@ -486,41 +486,46 @@ th {
   margin-bottom: 20px;
 }
 
-.folioitem .side-two i {
+.folioitem .side-two i, .folioitem .oneside i {
   font-size: 35px;
   display: inline-block;
 }
 
+.caseimg {
+  width: auto;
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 1024px) {
-  .folioitem .side-two h1 {
+  .folioitem .side-two h1, .folioitem .oneside h1 {
     text-align: center;
     width: 100%;
   }
 
-  .folioitem .side-two i {
+  .folioitem .side-two i, .folioitem .oneside i {
     display: inline-block;
     width: 35%;
     text-align: right;
     margin-right: 10px;
   }
 
-  .folioitem .side-two h2 {
+  .folioitem .side-two h2, .folioitem .oneside h2 {
     display: inline-block;
   }
 
-  .folioitem .side-two .p-imagens {
+  .folioitem .side-two .p-imagens, .folioitem .oneside .p-imagens {
     margin: auto;
   }
 
-  .folioitem .side-two .port-orig-link {
+  .folioitem .side-two .port-orig-link, .folioitem .oneside .port-orig-links {
     text-align: center;
   }
 
-  .folioitem .side-two .p-prints {
+  .folioitem .side-two .p-prints, .folioitem .oneside .p-prints {
     text-align: center;
   }
 
-  .folioitem .side-two .p-prints img {
+  .folioitem .side-two .p-prints img, .folioitem .oneside .p-prints img {
     margin-bottom: 5px;
   }
 
@@ -528,6 +533,11 @@ th {
     margin: auto;
   }
 }
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+  padding: 0;
+}
+
 /*FIM - Marvel Devices e Portfolio popups*/
 /*INICIO - Tipografia*/
 header, body {

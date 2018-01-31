@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 
 	//NAVEGA PARA A ÁREA DESEJADA DO MENU
 	var speed = 250;
-	$('header a').on('click', function(){
+	$('header a, btn-main').on('click', function(){
 		$('header a').removeClass('active');
 
 		if(!$(this).hasClass('menu-icon')){
@@ -41,6 +41,8 @@ jQuery(document).ready(function($){
 	});
 
 });
+
+
 
 $.fn.extend({
     animateCss1: function (animationName) {
