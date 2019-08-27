@@ -1022,7 +1022,7 @@ footer {
   }
 }
 .visible .android-skill {
-  width: 73%;
+  width: 85%;
   -webkit-animation: skillandroid 3s ease-in-out;
   animation: skillandroid 3s ease-in-out;
 }
@@ -1031,7 +1031,7 @@ footer {
     width: 0;
   }
   to {
-    width: 73%;
+    width: 85%;
   }
 }
 @keyframes skillandroid {
@@ -1039,7 +1039,7 @@ footer {
     width: 0;
   }
   to {
-    width: 73%;
+    width: 85%;
   }
 }
 .visible .windows-skill {
@@ -1064,7 +1064,7 @@ footer {
   }
 }
 .visible .php-skill {
-  width: 60%;
+  width: 50%;
   -webkit-animation: skillphp 3s ease-in-out;
   animation: skillphp 3s ease-in-out;
 }
@@ -1073,7 +1073,7 @@ footer {
     width: 0;
   }
   to {
-    width: 60%;
+    width: 50%;
   }
 }
 @keyframes skillphp {
@@ -1081,7 +1081,7 @@ footer {
     width: 0;
   }
   to {
-    width: 60%;
+    width: 50%;
   }
 }
 .visible .javascript-skill {
@@ -1127,7 +1127,7 @@ footer {
   }
 }
 .visible .csharp-skill {
-  width: 65%;
+  width: 60%;
   -webkit-animation: skillcsharp 3s ease-in-out;
   animation: skillcsharp 3s ease-in-out;
 }
@@ -1136,7 +1136,7 @@ footer {
     width: 0;
   }
   to {
-    width: 65%;
+    width: 60%;
   }
 }
 @keyframes skillcsharp {
@@ -1144,11 +1144,11 @@ footer {
     width: 0;
   }
   to {
-    width: 65%;
+    width: 60%;
   }
 }
 .visible .java-skill {
-  width: 60%;
+  width: 70%;
   -webkit-animation: skilljava 3s ease-in-out;
   animation: skilljava 3s ease-in-out;
 }
@@ -1157,7 +1157,7 @@ footer {
     width: 0;
   }
   to {
-    width: 60%;
+    width: 70%;
   }
 }
 @keyframes skilljava {
@@ -1165,7 +1165,7 @@ footer {
     width: 0;
   }
   to {
-    width: 60%;
+    width: 70%;
   }
 }
 .visible .photoshop-skill {
@@ -1211,7 +1211,7 @@ footer {
   }
 }
 .visible .html-skill {
-  width: 85%;
+  width: 90%;
   -webkit-animation: skillhtml 3s ease-in-out;
   animation: skillhtml 3s ease-in-out;
 }
@@ -1220,7 +1220,7 @@ footer {
     width: 0;
   }
   to {
-    width: 85%;
+    width: 90%;
   }
 }
 @keyframes skillhtml {
@@ -1228,7 +1228,7 @@ footer {
     width: 0;
   }
   to {
-    width: 85%;
+    width: 90%;
   }
 }
 .visible .css-skill {
@@ -1584,5 +1584,3 @@ html {
 /* FIM - PAGE STYLING*/
 
 
-
-/*# sourceMappingURL=style.css.map */

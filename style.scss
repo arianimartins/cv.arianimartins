@@ -548,8 +548,8 @@ $linkColor: #2897ce;
 		}
 	}
 
-	$skillList: (ingles:90%, espanhol:20%, android:73%, windows:45%, php:60%, javascript:75%, wordpress:60%,
-		csharp:65%, java:60%, photoshop:65%, illustrator:20%, html:85%,	css:75%, sass:30%);
+	$skillList: (ingles:90%, espanhol:20%, android:85%, windows:45%, php:50%, javascript:75%, wordpress:60%,
+		csharp:60%, java:70%, photoshop:65%, illustrator:20%, html:90%,	css:75%, sass:30%);
 
 	@mixin animaSkill($name, $limit){
 		animation: $name 3s ease-in-out;
