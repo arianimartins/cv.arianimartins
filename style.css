@@ -564,7 +564,7 @@ header, body {
   font-size: 25px;
   margin: -15px 0 0 0;
   font-family: "Merriweather", serif;
-  color: #8fd3f4;
+  color: #16222A;
 }
 @media screen and (max-width: 500px) {
   .sobre h2 {
@@ -580,7 +580,7 @@ header, body {
   font-weight: normal;
   font-size: 40px;
   margin: 0;
-  color: #8fd3f4;
+  color: #16222A;
 }
 .side-one h2 {
   font-family: "Merriweather", serif;
@@ -605,19 +605,25 @@ header, body {
   margin-top: 20px;
 }
 
-.formacao a, .experiencia a, .conhecimento a, footer a {
-  color: #2897ce;
+.formacao a, .experiencia a, .conhecimento a {
+  color: #3A6073;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a {
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
 }
 
 .social-links a {
-  color: #8fd3f4;
+  color: #16222A;
   font-size: 25px;
   margin: 0 10px;
 }
 .social-links a:hover {
-  color: #84fab0;
+  color: #3A6073;
 }
 
 .p-empresa {
@@ -640,10 +646,10 @@ header {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-image: -webkit-gradient(linear, right top, left top, from(#84fab0), to(#8fd3f4));
-  background-image: -webkit-linear-gradient(right, #84fab0, #8fd3f4);
-  background-image: -o-linear-gradient(right, #84fab0, #8fd3f4);
-  background-image: linear-gradient(to left, #84fab0, #8fd3f4);
+  background-image: -webkit-gradient(linear, right top, left top, from(#3A6073), to(#16222A));
+  background-image: -webkit-linear-gradient(right, #3A6073, #16222A);
+  background-image: -o-linear-gradient(right, #3A6073, #16222A);
+  background-image: linear-gradient(to left, #3A6073, #16222A);
   background-repeat: repeat-x;
   z-index: 100;
 }
@@ -732,7 +738,7 @@ nav ul li:first-child {
   margin: 20px;
   max-width: 190px;
   width: 100%;
-  color: #8fd3f4;
+  color: #16222A;
   font-size: 16px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -741,8 +747,8 @@ nav ul li:first-child {
   padding: 10px;
 }
 .avatar:hover:before, .avatar:hover:after {
-  border: 2px solid #84fab0;
-  border-color: transparent #84fab0;
+  border: 2px solid #3A6073;
+  border-color: transparent #3A6073;
 }
 .avatar *, .avatar:before, .avatar:after {
   -webkit-box-sizing: border-box;
@@ -762,8 +768,8 @@ nav ul li:first-child {
   left: 0px;
   right: 0px;
   z-index: -1;
-  border: 2px solid #8fd3f4;
-  border-color: transparent #8fd3f4;
+  border: 2px solid #16222A;
+  border-color: transparent #16222A;
 }
 .avatar div {
   background-position: center !important;
@@ -857,17 +863,17 @@ nav ul li:first-child {
 }
 
 .btn-main {
-  background-image: -webkit-gradient(linear, left top, right top, from(#84fab0), color-stop(51%, #8fd3f4), to(#84fab0));
-  background-image: -webkit-linear-gradient(left, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
-  background-image: -o-linear-gradient(left, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
-  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#3A6073), color-stop(51%, #16222A), to(#3A6073));
+  background-image: -webkit-linear-gradient(left, #3A6073 0%, #16222A 51%, #3A6073 100%);
+  background-image: -o-linear-gradient(left, #3A6073 0%, #16222A 51%, #3A6073 100%);
+  background-image: linear-gradient(to right, #3A6073 0%, #16222A 51%, #3A6073 100%);
 }
 
 .fade-effect {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#8fd3f4), to(rgba(255, 255, 255, 0)));
-  background-image: -webkit-linear-gradient(bottom, #8fd3f4, rgba(255, 255, 255, 0));
-  background-image: -o-linear-gradient(bottom, #8fd3f4, rgba(255, 255, 255, 0));
-  background-image: linear-gradient(to top, #8fd3f4, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#16222A), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(bottom, #16222A, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(bottom, #16222A, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to top, #16222A, rgba(255, 255, 255, 0));
   background-repeat: repeat-x;
   display: inline-block;
   width: 100%;
@@ -916,7 +922,7 @@ nav ul li:first-child {
 }
 
 .color-container {
-  background: #8fd3f4;
+  background: #16222A;
 }
 
 .side-one {
@@ -969,13 +975,13 @@ footer {
   background: #f1f1f1;
 }
 .progress-skill div {
-  background: -webkit-linear-gradient(360deg, #84fab0, #8fd3f4);
-  background: -moz-linear-gradient(360deg, #84fab0, #8fd3f4);
-  background: -o-linear-gradient(360deg, #84fab0, #8fd3f4);
-  background: -webkit-gradient(linear, left top, right top, from(#84fab0), to(#8fd3f4));
-  background: -webkit-linear-gradient(left, #84fab0, #8fd3f4);
-  background: -o-linear-gradient(left, #84fab0, #8fd3f4);
-  background: linear-gradient(90deg, #84fab0, #8fd3f4);
+  background: -webkit-linear-gradient(360deg, #3A6073, #16222A);
+  background: -moz-linear-gradient(360deg, #3A6073, #16222A);
+  background: -o-linear-gradient(360deg, #3A6073, #16222A);
+  background: -webkit-gradient(linear, left top, right top, from(#3A6073), to(#16222A));
+  background: -webkit-linear-gradient(left, #3A6073, #16222A);
+  background: -o-linear-gradient(left, #3A6073, #16222A);
+  background: linear-gradient(90deg, #3A6073, #16222A);
   height: inherit;
 }
 
@@ -1375,11 +1381,11 @@ footer {
   border-width: 5px;
   border-style: solid;
   border-right: 0;
-  -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#84fab0), to(#8fd3f4)) 1 100%;
-  -webkit-border-image: -webkit-linear-gradient(top, #84fab0, #8fd3f4) 1 100%;
-  -o-border-image: -o-linear-gradient(top, #84fab0, #8fd3f4) 1 100%;
-  border-image: -webkit-gradient(linear, left top, left bottom, from(#84fab0), to(#8fd3f4)) 1 100%;
-  border-image: linear-gradient(to bottom, #84fab0, #8fd3f4) 1 100%;
+  -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#3A6073), to(#16222A)) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(top, #3A6073, #16222A) 1 100%;
+  -o-border-image: -o-linear-gradient(top, #3A6073, #16222A) 1 100%;
+  border-image: -webkit-gradient(linear, left top, left bottom, from(#3A6073), to(#16222A)) 1 100%;
+  border-image: linear-gradient(to bottom, #3A6073, #16222A) 1 100%;
 }
 
 /*FIM - Timeline Experi├¬ncia e Cursos*/
@@ -1490,7 +1496,7 @@ html {
   cursor: pointer;
 }
 #filters li span.active {
-  background: #2897ce;
+  background: #3A6073;
   color: #fff;
 }
 
@@ -1511,7 +1517,7 @@ html {
 .portfolio-wrapper {
   overflow: hidden;
   position: relative !important;
-  background: #2897ce;
+  background: #3A6073;
   cursor: pointer;
 }
 
@@ -1533,7 +1539,7 @@ html {
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .portfolio .label-bg {
-  background: #2897ce;
+  background: #3A6073;
   width: 100%;
   height: 100%;
   position: absolute;

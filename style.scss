@@ -4,14 +4,14 @@
 
 /* INICIO - PAGE STYLING*/
 $textColor: rgb(21,21,21);
-$secondColor: #84fab0;
-$mainColor: #8fd3f4;
+$secondColor: #3A6073;
+$mainColor: #16222A;
 $avatarSize: 190px;
 $fontTitle: 'Abril Fatface', cursive;
 $fontDetails: 'Merriweather', serif;
 $fontContent: 'Lato', sans-serif;
 $textColor: #6b6b6b;
-$linkColor: #2897ce;
+$linkColor: #3A6073;
 
 .hidden{ opacity:0; }
 .visible{ opacity:1; }
@@ -206,9 +206,17 @@ $linkColor: #2897ce;
 		margin-top: 20px;
 	}
 
-	.formacao, .experiencia, .conhecimento, footer{
+	.formacao, .experiencia, .conhecimento{
 		a{
 			color: $linkColor;
+			font-weight: bold;
+			text-decoration: none;
+		}
+	}
+
+	footer{
+		a{
+			color: #fff;
 			font-weight: bold;
 			text-decoration: none;
 		}
